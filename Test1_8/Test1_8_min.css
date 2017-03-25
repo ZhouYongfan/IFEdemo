@@ -1,0 +1,58 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.container{
+	width:100%;
+    margin:20px;
+}
+
+.container div{
+    border:1px solid #999;
+    background-color:#eee;
+    margin-bottom:20px;
+}
+
+.no_1,.no_2{
+	width:45%;
+	float:left;
+}
+
+.no_3{
+    width:93%;
+	float:left;
+}
+
+.no_4,.no_5,.no_6{
+	float:left;
+}
+
+.no_4,.no_6{
+	width:20%;
+}
+
+.no_5{
+	width:47%;
+}
+
+.no_7,.no_8,.no_9{
+    float:left;
+}
+
+.no_7,.no_8{
+    width:10%;
+}
+
+.no_9{
+    width:67%;
+}
+
+.no_10,.no_11{
+    width:20%;
+    float:left;
+}
+
+.no_1,.no_4,.no_5,.no_7,.no_8,.no_10{
+	margin-right:20px;
+}
