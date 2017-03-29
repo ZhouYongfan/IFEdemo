@@ -42,11 +42,12 @@ document.getElementById("rightOut").onclick = function() {
 document.getElementById("sort").onclick = function() {
     var queue = document.getElementById('queue');
     var len = queue.childNodes.length;
-    for(let j = 0; j < len - 1; j ++){
-        for(let i = 0; i < len - 1 - j; i ++) {
-            if(parseInt(queue.childNodes[i].style.height) > parseInt(queue.childNodes[i+1].style.height)){
-                var node = queue.removeChild(queue.childNodes[i]);
-                queue.insertBefore(node,queue.childNodes[i+1]);
+    for(let j = 0; j < len; j ++){
+        for(let i = j + 1; i < len; i ++) {
+            if(parseInt(queue.childNodes[j].style.height) > parseInt(queue.childNodes[i].style.height)) {
+                let temp = queue.childNodes[i].style.height;
+                queue.childNodes[i].style.height = queue.childNodes[j].style.height;
+                queue.childNodes[j].style.height = temp;
             }
         }
     }
